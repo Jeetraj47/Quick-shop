@@ -12,8 +12,7 @@ grocery_items = [
 
 @app.route('/')
 def index():
-    return render_template('index.html', items=grocery_items)
-
+    return render_template('index.html', items=grocery_items
 @app.route('/add_to_cart', methods=['POST'])
 def add_to_cart():
     item_name = request.form['name']
